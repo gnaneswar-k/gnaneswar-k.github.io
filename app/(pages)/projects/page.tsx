@@ -1,5 +1,11 @@
+import type { Metadata } from "next";
 import NavBar from "@/app/_components/navbar"
 import Layout from "@/app/layout"
+
+export const metadata: Metadata = {
+  title: "Projects",
+  description: "Projects done by Gnaneswar Kulindala",
+};
 
 export default function Projects() {
   return (

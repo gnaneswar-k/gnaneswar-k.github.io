@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import profile from "@/app/_images/GK.svg"
+import profile from "@/public/GK.svg"
 
 const pages = ["projects", "contact"]
 
@@ -10,7 +10,10 @@ const pages = ["projects", "contact"]
  */
 export default function NavBar({ current }: { current?: string }) {
   return (
-    <header className="flex justify-evenly items-center w-full p-4 bg-white/75 border-b-2 border-solid border-gray-600" id="nav-bar">
+    <header
+      className="flex sticky top-0 justify-evenly items-center w-full p-4 bg-white/75 border-b-2 border-solid border-gray-600 backdrop-blur-xl"
+      id="nav-bar"
+    >
       {/* Home Link */}
       <Link href={"/"} className="flex text-xl items-center" id="nav-home">
         <Image
@@ -23,7 +26,7 @@ export default function NavBar({ current }: { current?: string }) {
         <div className="max-sm:hidden sm:px-2"><span className="font-bold">Gnaneswar</span> Kulindala</div>
       </Link>
       {/* Menu */}
-      <div className="flex justify-evenly items-center">
+      <div className="flex justify-evenly items-center capitalize text-lg font-semibold">
         {pages.map((
           value: string,
           index: number
@@ -33,7 +36,7 @@ export default function NavBar({ current }: { current?: string }) {
               href={`/${value}`}
               key={`nav-item-${index}`}
               className={
-                "capitalize text-lg font-semibold px-2 sm:px-4 transition ease-in-out duration-400 rounded-md border-b-4"
+                "px-2 sm:px-4 transition ease-in-out duration-400 rounded-md border-b-4"
                 + ((current === value) ? " border-black/75" : " border-black/10 hover:border-0 hover:ring-black/30 hover:ring-2")
               }
             >

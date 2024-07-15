@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className + " flex-col min-h-svh"} id="body">
+      <body className={inter.className + " flex flex-col min-h-dvh overflow-y-auto"} id="body">
         {children}
       </body>
     </html>
