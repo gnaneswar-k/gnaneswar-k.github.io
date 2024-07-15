@@ -28,7 +28,7 @@ export default function Homepage() {
             <div className="flex-col justify-center items-center p-2 space-y-4 md:order-1">
               <div className="flex justify-center text-center text-3xl font-semibold font-sans">Hey There!</div>
               <div className="flex justify-center text-center text-xl text-pretty">
-                I'm Gnaneswar Kulindala. Take a look around to get to know more about me!
+                I&apos;m Gnaneswar Kulindala. Take a look around to get to know more about me!
               </div>
             </div>
           </div>
