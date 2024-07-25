@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import NavBar from "@/app/_components/navbar";
+// import NavBar from "@/app/_components/navigation/navbar";
 import Layout from "@/app/layout";
 
 export const metadata: Metadata = {
@@ -7,11 +7,11 @@ export const metadata: Metadata = {
   description: "Projects done by Gnaneswar Kulindala",
 };
 
-export default function Projects() {
+const Projects = () => {
   return (
     <Layout>
       {/* Header */}
-      <header><NavBar /></header>
+      {/* <header><NavBar /></header> */}
       {/* Content */}
       <main className="flex-col items-center justify-center p-4 flex-grow">
         <div>Projects</div>
@@ -19,3 +19,5 @@ export default function Projects() {
     </Layout>
   );
 }
+
+export default Projects;

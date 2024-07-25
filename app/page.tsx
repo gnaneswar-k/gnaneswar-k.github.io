@@ -1,19 +1,19 @@
 import type { Metadata } from "next";
-import NavBar from "@/app/_components/navbar";
+// import NavBar from "@/app/_components/navigation/navbar";
 import Layout from "@/app/layout";
 import Image from "next/image";
-import portrait from "@/public/cutout-bw.png";
+import portrait from "@/public/images/cutout-bw.png";
 
 export const metadata: Metadata = {
   title: "Gnaneswar Kulindala",
   description: "Gnaneswar Kulindala's Homepage",
 };
 
-export default function Homepage() {
+const Homepage = () => {
   return (
     <Layout>
       {/* Header */}
-      <header><NavBar /></header>
+      {/* <header><NavBar /></header> */}
       {/* Content */}
       <main className="flex flex-col items-stretch justify-center">
         <div className="flex flex-grow items-center justify-center bg-white/75 rounded-lg shadow-md md:shadow-lg m-6">
@@ -35,3 +35,5 @@ export default function Homepage() {
     </Layout>
   );
 }
+
+export default Homepage;
