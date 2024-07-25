@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-// import NavBar from "@/app/_components/navigation/navbar";
+import Navigation from "./_components/navigation/navigation";
 import Layout from "@/app/layout";
 import Image from "next/image";
 import portrait from "@/public/images/cutout-bw.png";
@@ -13,7 +13,7 @@ const Homepage = () => {
   return (
     <Layout>
       {/* Header */}
-      {/* <header><NavBar /></header> */}
+      <header><Navigation /></header>
       {/* Content */}
       <main className="flex flex-col items-stretch justify-center">
         <div className="flex flex-grow items-center justify-center bg-white/75 rounded-lg shadow-md md:shadow-lg m-6">

@@ -1,6 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Navigation from "./_components/navigation/navigation";
+// import Navigation from "./_components/navigation/navigation";
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 config.autoAddCss = false;
@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className + " flex flex-col min-h-dvh overflow-y-auto"} id="body">
-        <header><Navigation /></header>
+        {/* <header><Navigation /></header> */}
         {children}
       </body>
     </html>

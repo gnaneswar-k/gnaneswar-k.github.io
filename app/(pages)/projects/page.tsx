@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-// import NavBar from "@/app/_components/navigation/navbar";
+import Navigation from "@/app/_components/navigation/navigation";
 import Layout from "@/app/layout";
 
 export const metadata: Metadata = {
@@ -11,7 +11,7 @@ const Projects = () => {
   return (
     <Layout>
       {/* Header */}
-      {/* <header><NavBar /></header> */}
+      <header><Navigation /></header>
       {/* Content */}
       <main className="flex-col items-center justify-center p-4 flex-grow">
         <div>Projects</div>

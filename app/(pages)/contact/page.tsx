@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-// import NavBar from "@/app/_components/navigation/navbar";
+import Navigation from "@/app/_components/navigation/navigation";
 import Layout from "@/app/layout";
 import SocialLink from "@/app/_components/social";
-import { faGithub, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 export const metadata: Metadata = {
   title: "Contact | Gnaneswar Kulindala",
@@ -13,7 +13,7 @@ const Contact = () => {
   return (
     <Layout>
       {/* Header */}
-      {/* <header><NavBar /></header> */}
+      <header><Navigation /></header>
       {/* Content */}
       <main className="flex-col items-center justify-center p-4 flex-grow">
         <div className="flex flex-grow items-center justify-center bg-white/75 rounded-lg shadow-md md:shadow-lg m-2 md:m-6 p-4">
